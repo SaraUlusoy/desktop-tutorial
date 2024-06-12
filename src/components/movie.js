@@ -1,4 +1,6 @@
 import React from 'react';
+import star from '../images/star.png';
+import delIcon from '../images/delete.png';
 
 function Movie({ title, rating, onDelete }) {
     return (
@@ -6,11 +8,11 @@ function Movie({ title, rating, onDelete }) {
             {title}
             <span className="stars-container">
                 {[...Array(rating)].map((_, i) => (
-                    <img key={i} src="star.png" alt="Star" className="star-icon star-size" />
+                    <img key={i} src={star} alt="Star" className="star-icon star-size" />
                 ))}
             </span>
             <img
-                src="delete.png"
+                src={delIcon}
                 alt="Delete movie"
                 className="delete-movie-icon delete-size"
                 onClick={onDelete}
