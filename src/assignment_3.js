@@ -1,3 +1,4 @@
+// src/assignment_3.js
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -39,36 +40,29 @@ function MovieList() {
     return (
         <div>
             <form onSubmit={handleSubmit} id="add-movie-form">
-                <fieldset>
-                    <legend>Lägg till en film</legend>
-                    <label htmlFor="title-field">Titel:</label>
-                    <input
-                        type="text"
-                        id="title-field"
-                        className="form-control"
-                        value={title}
-                        onChange={(e) => setTitle(e.target.value)}
-                        placeholder="Title"
-                    />
-                    <label htmlFor="rating-field">Betyg:</label>
-                    <select
-                        id="rating-field"
-                        className="form-control"
-                        value={rating}
-                        onChange={(e) => setRating(e.target.value)}
-                    >
-                        <option value="0">Välj betyg här...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <button type="submit" className="btn btn-success mt-3">Spara film</button>
-                </fieldset>
+                <input 
+                    type="text" 
+                    id="title-field" 
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    placeholder="Title"
+                />
+                <select 
+                    id="rating-field"
+                    value={rating}
+                    onChange={(e) => setRating(e.target.value)}
+                >
+                    <option value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button type="submit" id="add-movie-button">Add Movie</button>
             </form>
-            <hr />
-            <h2>Filmer</h2>
+            <button onClick={sortByTitle} id="sort-title">Sort by Title</button>
+            <button onClick={sortByRating} id="sort-rating">Sort by Rating</button>
             <ul id="movies">
                 {movies.map((movie, index) => (
                     <li key={index} className="d-flex justify-content-between align-items-center" data-title={movie.title} data-grade={movie.rating}>
@@ -78,17 +72,15 @@ function MovieList() {
                                 <img key={i} src="star.png" alt="Star" className="star-icon star-size" />
                             ))}
                         </span>
-                        <img
-                            src="delete.png"
-                            alt="Delete movie"
-                            className="delete-movie-icon delete-size"
+                        <img 
+                            src="delete.png" 
+                            alt="Delete movie" 
+                            className="delete-movie-icon delete-size" 
                             onClick={() => deleteMovie(index)}
                         />
                     </li>
                 ))}
             </ul>
-            <button onClick={sortByTitle} id="sort-title" className="btn btn-primary">Alfabetisk ordning</button>
-            <button onClick={sortByRating} id="sort-rating" className="btn btn-primary">Betygsordning</button>
         </div>
     );
 }
