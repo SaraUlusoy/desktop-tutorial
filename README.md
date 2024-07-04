@@ -39,7 +39,7 @@ Följ stegen nedan för att installera och köra projektet lokalt:
 
 ## Användning
 
-När utvecklingsservern är igång kan du öppna applikationen i din webbläsare på 'http://localhost:9001/' (eller annan port som anges i terminalen).
+När utvecklingsservern är igång kan du öppna applikationen i din webbläsare på 'http://localhost:9002/' (eller annan port som anges i terminalen).
 
 ### Funktioner
 
