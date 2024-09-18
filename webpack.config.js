@@ -48,6 +48,6 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9002, // Ändra port till 9002
+    port: 9003, // Ändra port till 9003
   },
 };
