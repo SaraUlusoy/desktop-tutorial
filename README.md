@@ -1,75 +1,54 @@
-# Welcome to GitHub Desktop!
-
-This is your README. READMEs are where you can communicate what your project is and how to use it.
-
-Write your name on line 6, save it, and then head back to GitHub Desktop.
-Sara Ulusoy
-
-
-# Desktop Tutorial
-
-# Filmlista
-
+Filmlista
 Detta projekt är en enkel React-applikation för att hantera en lista av filmer. Användaren kan lägga till, ta bort och sortera filmer baserat på titel eller betyg.
 
-## Installation
-
+Installation
 Följ stegen nedan för att installera och köra projektet lokalt:
 
-1. Klona repositoriet:
-    ```bash
-    git clone https://github.com/ditt-användarnamn/filmlista.git
-    cd filmlista
-    ```
+1. Klona repositoriet: git clone https://github.com/ditt-användarnamn/filmlista.git cd filmlista
 
-2. Installera nödvändiga npm-paket:
-    ```bash
-    npm install
-    ```
+2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
-3. Starta utvecklingsservern:
-    ```bash
-    npm start
-    ```
+3. Starta utvecklingsservern: npm start
 
-4. Bygg projektet för produktion:
-    ```bash
-    npm run build
-    ```
+4. Bygg projektet för produktion (om du vill distribuera en optimerad version): npm run build
 
-## Användning
+Användning
+När utvecklingsservern är igång kan du öppna applikationen i din webbläsare på http://localhost:9002/ (eller annan port som anges i terminalen).
 
-När utvecklingsservern är igång kan du öppna applikationen i din webbläsare på 'http://localhost:9002/' (eller annan port som anges i terminalen).
+Funktioner
+Lägg till en film: Fyll i titeln och välj ett betyg i formuläret, klicka sedan på "Spara film".
+Ta bort en film: Klicka på soptunneikonen bredvid filmen du vill ta bort.
+Sortera filmer: Använd knapparna "Alfabetisk ordning" och "Betygsordning" för att sortera filmerna.
 
-### Funktioner
+Projektstruktur
+├── dist/                # Byggd mapp för produktion
+├── node_modules/        # npm-paket
+├── src/                 # Källkod
+│   ├── components/      # React-komponenter
+│   │   └── Movie.js     # Komponent för att visa en enskild film
+│   ├── images/          # Bildfiler
+│   │   ├── star.png     # Stjärnikon för betyg
+│   │   └── delete.png   # Soptunneikon för att ta bort filmer
+│   ├── assignment_3.js  # Huvudkomponenten för applikationen
+│   └── index.html       # HTML-fil för Webpack
+├── .gitignore           # Filer som ska ignoreras av Git
+├── package.json         # Projektets beroenden och scripts
+├── package-lock.json    # Låser beroendeversionerna för att säkerställa konsekventa byggningar
+├── README.md            # Denna fil
+└── webpack.config.js    # Webpack-konfiguration för att bygga projektet
 
-- **Lägg till en film**: Fyll i titeln och välj ett betyg i formuläret, klicka sedan på "Spara film".
-- **Ta bort en film**: Klicka på soptunneikonen bredvid filmen du vill ta bort.
-- **Sortera filmer**: Använd knapparna "Alfabetisk ordning" och "Betygsordning" för att sortera filmerna.
+Viktiga beroenden
+* React: Ett JavaScript-bibliotek för att bygga användargränssnitt.
+* Webpack: En modulbuntare för JavaScript-applikationer, som hanterar både JavaScript och andra tillgångar som CSS och bilder.
+* Babel: En JavaScript-kompilator som används för att omvandla modern JavaScript till en version som kan köras i äldre webbläsare.
 
-### Projektstruktur
-├── dist/ # Byggd mapp
-├── node_modules/ # npm-paket
-├── src/ # Källkod
-│ ├── components/ # React-komponenter
-│ │ └── Movie.js
-│ ├── images/ # Bildfiler
-│ │ ├── star.png
-│ │ └── delete.png
-│ ├── assignment_3.js # Huvudkomponenten
-│ └── index.html # HTML-fil för Webpack
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── README.md # Denna fil
-└── webpack.config.js # Webpack-konfiguration
+Extra beroenden:
+* css-loader: Hanterar CSS-importer i JavaScript.
+* style-loader: Inkluderar CSS direkt i DOM.
+* file-loader: Hanterar import och export av bildfiler (som stjärnor och delete-knappen).
+* html-webpack-plugin: Genererar HTML-filen och inkluderar automatiskt de bundlade JavaScript-filerna.
 
 
-### Viktiga beroenden
-
-- React: En JavaScript-bibliotek för att bygga användargränssnitt.
-- Webpack: En modulbuntare för JavaScript-applikationer.
-- Babel: En JavaScript-kompilator som används för att omvandla modern JavaScript till en version som kan köras i äldre webbläsare.
 
 
 
