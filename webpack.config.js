@@ -37,6 +37,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,  // Hantera alla .css-filer
+        use: ['style-loader', 'css-loader'],  // Använd dessa loaders
+      },
     ],
   },
   plugins: [

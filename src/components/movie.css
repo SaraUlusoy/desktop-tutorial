@@ -1,0 +1,78 @@
+/* movie.css */
+button {
+    margin-right: 10px; /* Mellanrum mellan knappar */
+    padding: 10px 15px; /* Öka knappens storlek lite för bättre användarupplevelse */
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkblue; /* Färgändring vid hover */
+  }
+  
+  button:last-child {
+    margin-right: 0; /* Sista knappen ska inte ha extra marginal */
+  }
+  
+  /* Justera container för varje film */
+.movie-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilen för filmnamn */
+.movie-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20px;
+}
+
+/* Stilen för stjärnorna */
+.stars-container img {
+  width: 24px; /* Minska storleken på stjärnorna */
+  height: 24px;
+  margin-right: 5px;
+}
+
+/* Stilen för radera-knappen (X) */
+.delete-movie-icon {
+  width: 24px; /* Minska storleken på ikonen */
+  height: 24px;
+  cursor: pointer;
+}
+
+.delete-movie-icon:hover {
+  opacity: 0.7; /* Gör ikonen lite genomskinlig vid hover */
+}
+
+/* Justera avståndet mellan knapparna */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Snyggare knappar */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+  

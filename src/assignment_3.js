@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Movie from './components/Movie';
+import './components/movie.css';
+
+
 
 function MovieList() {
     const [movies, setMovies] = useState([]);
@@ -86,8 +89,10 @@ function MovieList() {
                     />
                 ))}
             </ul>
-            <button onClick={sortByTitle} id="sort-title" className="btn btn-primary">Alfabetisk ordning</button>
-            <button onClick={sortByRating} id="sort-rating" className="btn btn-primary">Betygsordning</button>
+            <div className="button-container">
+             <button onClick={sortByTitle} id="sort-title" className="btn btn-primary">Alfabetisk ordning</button>
+             <button onClick={sortByRating} id="sort-rating" className="btn btn-primary">Betygsordning</button>
+             </div>
         </div>
     );
 }
