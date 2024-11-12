@@ -16,11 +16,13 @@ Följ stegen nedan för att installera och köra projektet lokalt:
 
 6. Välj "Open in Visual Studio Code"
 
-2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
+7. Öppna terminal
 
-3. Starta utvecklingsservern: npm start
+8. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
-4. Bygg projektet för produktion (om du vill distribuera en optimerad version): npm run build
+9. Starta utvecklingsservern: npm start
+
+10. Bygg projektet för produktion (om du vill distribuera en optimerad version): npm run build
 
 Användning
 När utvecklingsservern är igång kan du öppna applikationen i din webbläsare på http://localhost:9002/ (eller annan port som anges i terminalen).
