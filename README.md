@@ -10,7 +10,9 @@ Följ stegen nedan för att installera och köra projektet lokalt:
 
 3. Öppna Github desktop
 
-4. Klistra in url på clone 
+4. Välj " Clone a Respository from the internet
+
+5. Välj URL och sedan klistra in url : https://github.com/SaraUlusoy/desktop-tutorial.git, därefter klickar du på clone. 
 
 2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
