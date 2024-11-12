@@ -4,7 +4,7 @@ Detta projekt är en enkel React-applikation för att hantera en lista av filmer
 Installation
 Följ stegen nedan för att installera och köra projektet lokalt:
 
-1. Klicka på < >Code och välj HTTPS
+1. Klicka på < > Code och välj HTTPS
 
 2. Kopiera URL: https://github.com/SaraUlusoy/desktop-tutorial.git
 
@@ -13,6 +13,8 @@ Följ stegen nedan för att installera och köra projektet lokalt:
 4. Välj " Clone a Respository from the internet
 
 5. Välj URL och sedan klistra in url : https://github.com/SaraUlusoy/desktop-tutorial.git, därefter klickar du på clone. 
+
+6. Välj 
 
 2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
