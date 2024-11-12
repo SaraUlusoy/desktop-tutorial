@@ -14,7 +14,7 @@ Följ stegen nedan för att installera och köra projektet lokalt:
 
 5. Välj URL och sedan klistra in url : https://github.com/SaraUlusoy/desktop-tutorial.git, därefter klickar du på clone. 
 
-6. Välj 
+6. Välj "Open in Visual Studio Code"
 
 2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
