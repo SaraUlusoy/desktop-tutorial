@@ -4,7 +4,13 @@ Detta projekt är en enkel React-applikation för att hantera en lista av filmer
 Installation
 Följ stegen nedan för att installera och köra projektet lokalt:
 
-1. Klona repositoriet: git clone https://github.com/ditt-användarnamn/filmlista.git cd filmlista
+1. Klicka på < >Code och välj HTTPS
+
+2. Kopiera URL: https://github.com/SaraUlusoy/desktop-tutorial.git
+
+3. Öppna Github desktop
+
+4. Klistra in url på clone 
 
 2. Installera nödvändiga npm-paket (du behöver bara göra detta en gång): npm install
 
